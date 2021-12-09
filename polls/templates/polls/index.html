@@ -9,3 +9,8 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+<form action="{% url  'polls:create' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Button"/>
+</form>
