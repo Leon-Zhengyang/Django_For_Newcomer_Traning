@@ -8,3 +8,6 @@ https://docs.djangoproject.com/zh-hans/3.2/howto/windows/
 # 3 djangoとpython を確認する
 
 py -m django --version
+
+# project start
+https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial01/

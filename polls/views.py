@@ -25,13 +25,15 @@ class DetailView(generic.DetailView):
     model = Question
     template_name = 'polls/detail.html'
 
-def ToCreate(request):
-    return render(request, 'polls/create.html')
+class EditView(generic.DetailView):
+    model = Question
+    template_name = 'polls/edit.html'
 
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
 
+# 投票機能
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
@@ -50,21 +52,32 @@ def vote(request, question_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
-def regist(request):
-    print(request)
-    myQuestion1 = request.POST.get('myQuestion1', "")
-    # if myQuestion1 is None or "":
-    #     return render(request, 'polls/create.html', {
-    #         'error_message': "You have to input a question",
-    #     })
-    myChoice1 = request.POST.get('myChoice1', "")
-    # myChoice2 = request.GET['myChoice2']
-    # myChoice3 = request.GET['myChoice3']
-    q = Question(question_text=myQuestion1, pub_date=timezone.now())
-    q.save()
-    q.choice_set.create(choice_text=myChoice1, votes=0)
-    return HttpResponseRedirect(reverse('polls:index'))
-
+# 投票結果
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question': question})
+
+# 新規作成画面遷移
+def ToCreate(request):
+    return render(request, 'polls/create.html')
+
+# 新規登録機能    
+def regist(request):
+    myQuestion1 = request.POST.get('myQuestion1', "")
+    if myQuestion1 =="":
+        return render(request, 'polls/create.html', {
+            'error_message': "You have to input a question",
+        })
+    myChoice1 = request.POST.get('myChoice1', "")
+    myChoice2 = request.POST.get('myChoice2', "")
+    myChoice3 = request.POST.get('myChoice3', "")
+        
+    q = Question(question_text=myQuestion1, pub_date=timezone.now())
+    q.save()
+    if len(myChoice1.strip()) != 0:
+        q.choice_set.create(choice_text=myChoice1, votes=0)
+    if len(myChoice2.strip()) != 0:
+        q.choice_set.create(choice_text=myChoice2, votes=0)
+    if len(myChoice3.strip()) != 0:
+        q.choice_set.create(choice_text=myChoice3, votes=0)
+    return HttpResponseRedirect(reverse('polls:index'))
