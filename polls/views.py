@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
 from django.http import HttpResponse
+from django.db import transaction
 
 from .models import Choice, Question
 
@@ -61,23 +62,33 @@ def results(request, question_id):
 def ToCreate(request):
     return render(request, 'polls/create.html')
 
-# 新規登録機能    
+# 新規登録機能
+@transaction.atomic 
 def regist(request):
     myQuestion1 = request.POST.get('myQuestion1', "")
     if myQuestion1 =="":
         return render(request, 'polls/create.html', {
-            'error_message': "You have to input a question",
+            'error_message': "質問を入力してください。",
         })
-    myChoice1 = request.POST.get('myChoice1', "")
-    myChoice2 = request.POST.get('myChoice2', "")
-    myChoice3 = request.POST.get('myChoice3', "")
-        
+    choices = []
+    count = 0
+    choices.append(request.POST.get('myChoice1', ""))
+    choices.append(request.POST.get('myChoice2', ""))
+    choices.append(request.POST.get('myChoice3', ""))
+    choices.append(request.POST.get('myChoice4', ""))
+
     q = Question(question_text=myQuestion1, pub_date=timezone.now())
     q.save()
-    if len(myChoice1.strip()) != 0:
-        q.choice_set.create(choice_text=myChoice1, votes=0)
-    if len(myChoice2.strip()) != 0:
-        q.choice_set.create(choice_text=myChoice2, votes=0)
-    if len(myChoice3.strip()) != 0:
-        q.choice_set.create(choice_text=myChoice3, votes=0)
+
+    for choice in choices:
+        if len(choice.strip()) ==0:
+            count += 1
+        else:
+            q.choice_set.create(choice_text=choice, votes=0)
+    if count >= 2:
+        return render(request, 'polls/create.html', {
+            'error_message': "選択肢を２つ以上入力してください。",
+            'myQuestion1':myQuestion1
+        })
+        
     return HttpResponseRedirect(reverse('polls:index'))

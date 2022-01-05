@@ -1,16 +1,22 @@
 <h1>新規作成</h1>
 <form action="{% url  'polls:regist' %}" method="post">
     {% csrf_token %}
-    <label><h3>Question</h3></label>
-    <input type="text"  name="myQuestion1"/>
+    <label><h3>質問</h3></label>
+    {% if myQuestion1 %}
+    <input type="text"  name="myQuestion1" value="{{ myQuestion1 }}"/>
+    {% else %}
+    <input type="text"  name="myQuestion1""/>
+    {% endif %}
     <br>
-    <label><h3>Choice</h3></label>
+    <label><h3>選択肢</h3></label>
     <input type="text"  name="myChoice1"/>
     <br>
     <input type="text"  name="myChoice2"/>
     <br>
     <input type="text"  name="myChoice3"/>
     <br>
+    <input type="text"  name="myChoice4"/>
+    <br>
     {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-    <input type="submit" value="Button"/>
+    <input type="submit" value="登録"/>
 </form>
