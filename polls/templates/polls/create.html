@@ -9,6 +9,12 @@
     {% endif %}
     <br>
     <label><h3>選択肢</h3></label>
+    {% if Choices %}
+    {% for choice in Choices %}
+    <input type="text" name="myChoice{{ forloop.counter }}" value="{{ choice }}"/>
+    <br>
+    {% endfor %}
+    {% else %}
     <input type="text"  name="myChoice1"/>
     <br>
     <input type="text"  name="myChoice2"/>
@@ -17,6 +23,10 @@
     <br>
     <input type="text"  name="myChoice4"/>
     <br>
+    {% endif %}
     {% if error_messages %}{% for message in error_messages %}<p><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
-    <input type="submit" value="登録"/>
+    <br>
+    <input type="submit" name="regist" value="登録"/>
+    <input type="submit" name="goBack" value="一覧画面に戻る"/>
 </form>
+

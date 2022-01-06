@@ -2,12 +2,13 @@
     {% csrf_token %}
     <fieldset>
         <legend><h1>{{ question.question_text }}</h1></legend>
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        {% if error_messages %}<p><strong>{{ error_messages }}</strong></p>{% endif %}
         {% for choice in question.choice_set.all %}
             <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }} -- {{ choice.votes }}票</label><br>
         {% endfor %}
     </fieldset>
-    <input type="submit" value="Vote">
+    <input type="submit" name ="vote" value="投票">
+    <input type="submit" name="goBack" value="一覧画面に戻る"/>
     <a href="{% url 'polls:edit' question.id %}">編集</a>
 </form>

@@ -1,0 +1,547 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "generic",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "config.asgi",
+        "description": "config.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "config.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-y_sk^%kkbawd9q&q#4)k$fh9t$(+z#r3q-1$2@8rex*97w)!u9'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-y_sk^%kkbawd9q&q#4)k$fh9t$(+z#r3q-1$2@8rex*97w)!u9'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'polls.apps.PollsConfig',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'polls.apps.PollsConfig',\n]\nMIDDLEWARE = [",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'config.urls'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "ROOT_URLCONF = 'config.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'config.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "config.urls",
+        "description": "config.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include('polls.urls')),\n    path('admin/', admin.site.urls),\n]",
+        "detail": "config.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "config.wsgi",
+        "description": "config.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "config.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "polls.migrations.0001_initial",
+        "description": "polls.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Question',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('question_text', models.CharField(max_length=200)),",
+        "detail": "polls.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "PollsConfig",
+        "kind": 6,
+        "importPath": "polls.apps",
+        "description": "polls.apps",
+        "peekOfCode": "class PollsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'polls'",
+        "detail": "polls.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 6,
+        "importPath": "polls.models",
+        "description": "polls.models",
+        "peekOfCode": "class Question(models.Model):\n    def __str__(self):\n        return self.question_text\n    def was_published_recently(self):\n        now = timezone.now()\n        return now - datetime.timedelta(days=1) <= self.pub_date <= now\n    question_text = models.CharField(max_length=200)\n    pub_date = models.DateTimeField('date published')\nclass Choice(models.Model):\n    def __str__(self):",
+        "detail": "polls.models",
+        "documentation": {}
+    },
+    {
+        "label": "Choice",
+        "kind": 6,
+        "importPath": "polls.models",
+        "description": "polls.models",
+        "peekOfCode": "class Choice(models.Model):\n    def __str__(self):\n        return self.choice_text\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    choice_text = models.CharField(max_length=200)\n    votes = models.IntegerField(default=0)",
+        "detail": "polls.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "polls.urls",
+        "description": "polls.urls",
+        "peekOfCode": "app_name = 'polls'\nurlpatterns = [\n    path('', views.IndexView.as_view(), name='index'),\n    # 新規作成画面遷移\n    path('create/', views.ToCreate, name='create'),\n    path('create/regist/', views.regist, name='regist'),\n    path('<int:pk>/', views.detail, name='detail'),\n    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),\n    path('<int:pk>/edit/', views.EditView.as_view(), name='edit'),\n    path('<int:question_id>/vote/', views.vote, name='vote'),",
+        "detail": "polls.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "polls.urls",
+        "description": "polls.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.IndexView.as_view(), name='index'),\n    # 新規作成画面遷移\n    path('create/', views.ToCreate, name='create'),\n    path('create/regist/', views.regist, name='regist'),\n    path('<int:pk>/', views.detail, name='detail'),\n    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),\n    path('<int:pk>/edit/', views.EditView.as_view(), name='edit'),\n    path('<int:question_id>/vote/', views.vote, name='vote'),\n]",
+        "detail": "polls.urls",
+        "documentation": {}
+    },
+    {
+        "label": "IndexView",
+        "kind": 6,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "class IndexView(generic.ListView):\n    template_name = 'polls/index.html'\n    context_object_name = 'latest_question_list'\n    def get_queryset(self):\n        \"\"\"\n        Return the last five published questions (not including those set to be\n        published in the future).\n        \"\"\"\n        return Question.objects.filter(\n            pub_date__lte=timezone.now()",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "kind": 6,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "class DetailView(generic.DetailView):\n    model = Question\n    template_name = 'polls/detail.html'\nclass EditView(generic.DetailView):\n    model = Question\n    template_name = 'polls/edit.html'\nclass ResultsView(generic.DetailView):\n    model = Question\n    template_name = 'polls/results.html'\n# 投票機能",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "EditView",
+        "kind": 6,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "class EditView(generic.DetailView):\n    model = Question\n    template_name = 'polls/edit.html'\nclass ResultsView(generic.DetailView):\n    model = Question\n    template_name = 'polls/results.html'\n# 投票機能\ndef vote(request, question_id):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "ResultsView",
+        "kind": 6,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "class ResultsView(generic.DetailView):\n    model = Question\n    template_name = 'polls/results.html'\n# 投票機能\ndef vote(request, question_id):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:\n            return HttpResponseRedirect(reverse('polls:index'))\n    question = get_object_or_404(Question, pk=question_id)\n    try:",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "vote",
+        "kind": 2,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "def vote(request, question_id):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:\n            return HttpResponseRedirect(reverse('polls:index'))\n    question = get_object_or_404(Question, pk=question_id)\n    try:\n        selected_choice = question.choice_set.get(pk=request.POST['choice'])\n    except (KeyError, Choice.DoesNotExist):\n        # Redisplay the question voting form.\n        return render(request, 'polls/detail.html', {",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 2,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "def results(request, question_id):\n    question = get_object_or_404(Question, pk=question_id)\n    return render(request, 'polls/detail.html', {\n        'question': question\n        })\n    # return render(request, 'polls/results.html', {'question': question})\n# 新規作成画面遷移\ndef ToCreate(request):\n    return render(request, 'polls/create.html')\n# 選択肢は重複チェック",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "ToCreate",
+        "kind": 2,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "def ToCreate(request):\n    return render(request, 'polls/create.html')\n# 選択肢は重複チェック\ndef has_duplicates(seq):\n    return len(seq) != len(set(seq))\n# 新規登録機能\n@transaction.atomic \ndef regist(request):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "has_duplicates",
+        "kind": 2,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "def has_duplicates(seq):\n    return len(seq) != len(set(seq))\n# 新規登録機能\n@transaction.atomic \ndef regist(request):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:\n            return HttpResponseRedirect(reverse('polls:index'))\n    error_messages = []\n    myQuestion1 = request.POST.get('myQuestion1', \"\")",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "regist",
+        "kind": 2,
+        "importPath": "polls.views",
+        "description": "polls.views",
+        "peekOfCode": "def regist(request):\n    if request.method == 'POST':\n        if 'goBack' in request.POST:\n            return HttpResponseRedirect(reverse('polls:index'))\n    error_messages = []\n    myQuestion1 = request.POST.get('myQuestion1', \"\")\n    if len(myQuestion1.strip()) ==0:\n        error_messages.append(\"質問を入力してください。\")\n    choices = []\n    count = 0",
+        "detail": "polls.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
