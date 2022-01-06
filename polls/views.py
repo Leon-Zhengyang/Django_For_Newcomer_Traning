@@ -43,7 +43,7 @@ def vote(request, question_id):
         # Redisplay the question voting form.
         return render(request, 'polls/detail.html', {
             'question': question,
-            'error_message': "You didn't select a choice.",
+            'error_messages': "You didn't select a choice.",
         })
     else:
         selected_choice.votes += 1
@@ -65,30 +65,32 @@ def ToCreate(request):
 # 新規登録機能
 @transaction.atomic 
 def regist(request):
+    error_messages = []
     myQuestion1 = request.POST.get('myQuestion1', "")
-    if myQuestion1 =="":
-        return render(request, 'polls/create.html', {
-            'error_message': "質問を入力してください。",
-        })
+    if len(myQuestion1.strip()) ==0:
+        error_messages.append("質問を入力してください。")
     choices = []
     count = 0
     choices.append(request.POST.get('myChoice1', ""))
     choices.append(request.POST.get('myChoice2', ""))
     choices.append(request.POST.get('myChoice3', ""))
     choices.append(request.POST.get('myChoice4', ""))
-
-    q = Question(question_text=myQuestion1, pub_date=timezone.now())
-    q.save()
-
     for choice in choices:
         if len(choice.strip()) ==0:
             count += 1
-        else:
-            q.choice_set.create(choice_text=choice, votes=0)
-    if count >= 2:
+    
+    if count > 2:
+        error_messages.append("選択肢を２つ以上入力してください。")
+    if len(error_messages) > 0:
         return render(request, 'polls/create.html', {
-            'error_message': "選択肢を２つ以上入力してください。",
+            'error_messages': error_messages,
             'myQuestion1':myQuestion1
         })
+    if len(error_messages) == 0:
+        q = Question(question_text=myQuestion1, pub_date=timezone.now())
+        q.save()
+        for choice in choices:
+            if len(choice.strip()) !=0:
+                q.choice_set.create(choice_text=choice, votes=0)
         
     return HttpResponseRedirect(reverse('polls:index'))
