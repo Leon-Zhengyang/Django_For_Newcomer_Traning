@@ -10,5 +10,7 @@
     </fieldset>
     <input type="submit" name ="vote" value="投票">
     <input type="submit" name="goBack" value="一覧画面に戻る"/>
-    <a href="{% url 'polls:edit' question.id %}">編集</a>
+    {% if vote_start == False %}
+        <a href="{% url 'polls:edit' question.id %}">編集</a>
+    {% endif %}
 </form>

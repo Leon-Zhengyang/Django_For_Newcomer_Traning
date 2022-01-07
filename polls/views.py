@@ -21,10 +21,19 @@ class IndexView(generic.ListView):
             pub_date__lte=timezone.now()
         ).order_by('-pub_date')[:5]
 
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    vote_start = False
+    for choice in question.choice_set.all():
+        if choice.votes > 0:
+            vote_start = True
+            break
 
-class DetailView(generic.DetailView):
-    model = Question
-    template_name = 'polls/detail.html'
+    return render(request, 'polls/detail.html', {
+        'question': question,
+        'vote_start':vote_start,
+        })
+
 
 class EditView(generic.DetailView):
     model = Question
