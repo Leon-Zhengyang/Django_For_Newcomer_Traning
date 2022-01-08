@@ -1,16 +1,16 @@
-<form action="{% url 'polls:vote' question.id %}" method="post">
+<form action="{% url 'polls:update' question.id %}" method="post">
     {% csrf_token %}
-        <label><h3>Question</h3></label>
-        <input type="text" name="myQuestion1" value="{{question.question_text}}"></input>
+        <label><h3>質問</h3></label>
+            <input type="text" name="myQuestion1" value="{{question.question_text}}"></input>
         <br>
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-        <label><h3>Choice</h3></label>
-        <input type="text"  name="myChoice2" value="{{question.question_text}}"/>
-        <br>
-        <input type="text"  name="myChoice2" value="{{question.question_text}}"/>
-        <br>
-        <input type="text"  name="myChoice3" value="{{question.question_text}}"/>
-        <br>
-    <input type="submit" value="更新する">
-    <a href="{% url 'polls:detail' question.id %}">戻る</a>
+        <label><h3>選択肢</h3></label>
+        {% if Choices %}
+        {% for choice in Choices %}
+            <input type="text" name="myChoice{{ forloop.counter }}" value="{{ choice }}"/>
+            <br>
+        {% endfor %}
+        {% endif %}
+        {% if error_messages %}{% for message in error_messages %}<p><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
+    <input type="submit" name="update" value="更新する">
+    <input type="submit" name="goBack" value="詳細に戻る"/>
 </form>
