@@ -1,3 +1,6 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 <form action="{% url 'polls:update' question.id %}" method="post">
     {% csrf_token %}
         <label><h3>質問</h3></label>
@@ -10,7 +13,7 @@
             <br>
         {% endfor %}
         {% endif %}
-        {% if error_messages %}{% for message in error_messages %}<p><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
+        {% if error_messages %}{% for message in error_messages %}<p class="error"><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
     <input type="submit" name="update" value="更新する">
     <input type="submit" name="goBack" value="詳細に戻る"/>
 </form>

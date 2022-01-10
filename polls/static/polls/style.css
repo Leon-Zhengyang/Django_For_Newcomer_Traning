@@ -1,3 +1,13 @@
-li a {
-    color: green;
+
+.error{
+    color: red;
+}
+body{ 
+    background-color:#dddddd;
+    color : #000000;
+    margin-left: 500px;
+    margin-right: auto;
+    width:700px;
+    font-size:100%;
+    text-align:left;
 }

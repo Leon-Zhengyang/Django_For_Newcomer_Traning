@@ -1,3 +1,6 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 <h1>新規作成</h1>
 <form action="{% url  'polls:regist' %}" method="post">
     {% csrf_token %}
@@ -24,7 +27,7 @@
     <input type="text"  name="myChoice4"/>
     <br>
     {% endif %}
-    {% if error_messages %}{% for message in error_messages %}<p><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
+    {% if error_messages %}{% for message in error_messages %}<p class="error"><strong>{{ message }}</strong></p>{% endfor %}{% endif %}
     <br>
     <input type="submit" name="regist" value="登録"/>
     <input type="submit" name="goBack" value="一覧画面に戻る"/>

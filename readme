@@ -11,3 +11,6 @@ py -m django --version
 
 # project start
 https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial01/
+
+# run the server
+py manage.py runserver

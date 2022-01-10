@@ -3,8 +3,8 @@ from django.urls import path
 from . import views
 
 app_name = 'polls'
+
 urlpatterns = [
-    # index画面
     path('', views.IndexView.as_view(), name='index'),
     # 新規作成画面遷移
     path('create/', views.ToCreate, name='create'),
