@@ -1,4 +1,5 @@
 
+#社内新人研修向け
 #1 仮想環境
 ..\projectVenv\Scripts\activate.bat
 
