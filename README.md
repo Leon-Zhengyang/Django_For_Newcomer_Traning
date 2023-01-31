@@ -1,5 +1,6 @@
 
 #社内新人研修向け
+
 #1 仮想環境
 ..\projectVenv\Scripts\activate.bat
 
@@ -12,4 +13,3 @@ https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial01/
 
 参考サイト
 https://docs.djangoproject.com/zh-hans/3.2/howto/windows/
-
